@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>hello</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, molestias.</p>
+    <input type="text" placeholder="text">
+    <input type="text" placeholder="text" name="value">
+    <a href="www.google.com">google</a>
+    <a href="www.google.com">google2</a>
+    <script>
+        // syntax $(selector).action()
+        $ (document).ready(function(){
+            $ ('h1').text("vannakam");
+        })
+    </script>
+    <div id="id">content</div>
+    <div class="id1">content</div>
+
+    <script>
+        // id selector
+        $('#id').text("hello");
+        // class selector
+        $('.id1').css('background-color','blue')
+        // elemenet selector
+        $('p').hide();
+        // atribute selector
+        $('[placeholder]').css('border','yellow','background-color','blue')
+        // value selector
+        $('[name="value"]').val("defaut");
+        // partial value selector selecting the value more than one
+        $('a[href*="google"]').css('color','red')
+        // for selecting element that mathches the first alf
+        $('a[href^="google"]').css('color','red')
+        // descendant selector
+        $('.conta p ').css('color','blue')
+        // direct child
+        $('.cont >p').css()
+
+
+        // DOM
+        // html()
+        $('#cont').html('<p>new html</p>');
+        // for text
+        $('#cont').text('<p>new html</p>');
+        // attr()
+        $('#cont').attr('src','newimage.png');       
+        $('#cont').attr('alt','newimag');     
+        // val()  
+        $('#cont').val('new');
+        // append child
+        $('#cont').append('<p>new html</p>');
+        // prepand
+        $('#cont').prepend('<p>new html</p>');
+        // remove
+        $('#cont').remove('<p>new html</p>');
+
+
+    </script>
+    
+
+</body>
+</html>
